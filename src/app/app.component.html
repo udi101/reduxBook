@@ -1,0 +1,21 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+</div>
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      Count: {{count$ | async}}
+      <button class="btn btn-sm" (click)="increment()">+</button>
+      <button class="btn btn-sm" (click)="decrement()">-</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+    Name: {{name$ | async}}
+    <button class="btn btn-sm btn-primary" (click)="lower()">lower</button>
+    </div>    
+  </div>
+</div>
